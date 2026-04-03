@@ -1,0 +1,28 @@
+copy-on-select = clipboard
+theme = argonaut
+font-family = "Google Sans Code 
+font-style = Medium
+keybind = ctrl+z=close_surface
+keybind = cmd+r=new_split:right
+window-padding-x = 20
+window-padding-y = 40
+maximize=true
+fullscreen=true
+window-decoration=true
+working-directory=/Users/bkmobil/Projects
+
+adjust-strikethrough-position = 50%
+adjust-cell-height = 20%
+
+macos-titlebar-style = hidden
+
+cursor-opacity = 1
+cursor-color = #FFFF00
+cursor-style = bar
+cursor-style-blink = false
+
+mouse-hide-while-typing = true
+
+macos-titlebar-style = hidden
+macos-titlebar-proxy-icon = hidden
+macos-icon = retro
