@@ -1,6 +1,14 @@
 #/bin/bash
 DOTFILES="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+# Dotfiles link
+rm -rf $HOME/dotfiles
+ln -s $DOTFILES $HOME/dotfiles
+
+# zsh
+rm -rf $HOME/.zshrc
+ln -s $DOTFILES/zsh/.zshrc $HOME/.zshrc
+
 # Ghostty
 rm -rf $HOME/.config/ghostty
 ln -s $DOTFILES/ghostty $HOME/.config/ghostty
@@ -12,4 +20,16 @@ ln -s $DOTFILES/tmux $HOME/.config/tmux
 # nvim
 rm -rf $HOME/.config/nvim
 ln -s $DOTFILES/nvim $HOME/.config/nvim
+
+# atuin
+rm -rf $HOME/.config/atuin
+ln -s $DOTFILES/atuin $HOME/.config/atuin
+
+# starship
+rm -rf $HOME/.config/starship.toml
+ln -s $DOTFILES/starship/starship.toml $HOME/.config/starship.toml
+
+# kitty
+ rm -rf $HOME/.config/kitty
+ ln -s $DOTFILES/kitty $HOME/.config/kitty
 

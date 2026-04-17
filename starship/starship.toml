@@ -1,0 +1,57 @@
+# 1. THE ARCHITECTURE
+# Only modules listed here will ever show up. 
+# This effectively disables the other 50+ default modules.
+format = """$character $directory $git_branch """
+
+# Don't print a new line at the start of the prompt
+add_newline = false
+
+# 2. THE VISUALS (Matching your OMZ Theme)
+
+[character]
+# Red arrow followed by a space
+success_symbol = "[➜](bold red) "
+error_symbol = "[➜](bold red) "
+
+[directory]
+style = "cyan"
+# Matches %c (shows only the current folder name)
+truncation_length = 1
+fish_style_pwd_dir_length = 1
+format = "[$path]($style) "
+
+[git_branch]
+symbol = "" # Removed the default branch icon
+style = "bold blue"
+format = "[($branch)]($style)"
+
+# 3. THE "SILENCE" DELEGATION
+# While the 'format' above hides them, these settings ensure 
+# Starship doesn't even try to scan for them in the background.
+
+[git_status]
+disabled = true
+[git_commit]
+disabled = true
+[git_state]
+disabled = true
+
+
+[package]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[python]
+disabled = true
+
+[aws]
+disabled = true
+
+[gcloud]
+disabled = true
+
+[terraform]
+disabled = true
+

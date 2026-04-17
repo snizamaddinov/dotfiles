@@ -1,0 +1,12 @@
+# Use a small popup instead of full screen
+inline_height = 10
+
+# Up arrow only shows commands from the current folder
+filter_mode_shell_up_key_binding = "session"
+
+# Up arrow only matches what you've already typed
+search_mode_shell_up_key_binding = "prefix"
+
+# Don't execute immediately on Enter; let me edit the command first
+enter_accept = true
+
