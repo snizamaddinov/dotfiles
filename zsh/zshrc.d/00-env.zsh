@@ -10,3 +10,11 @@ export DISABLE_UPDATE_PROMPT=YES
 export EDITOR=nvim
 
 unset MAILCHECK
+
+# zsh options
+setopt auto_cd
+setopt auto_pushd
+setopt pushd_ignore_dups
+setopt pushdminus
+
+

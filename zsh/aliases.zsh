@@ -33,6 +33,16 @@ alias ls="ls -G"
 alias ll="ls -Glh"
 alias la="ls -GlhA"
 
+# cd
+alias -g ..='cd ..'
+alias -g ...='cd ../..'
+
+alias -- -='cd -'
+alias 1='cd -1'
+alias 2='cd -2'
+alias 3='cd -3'
+alias 4='cd -4'
+
 # brew no update session
 alias brewinstall="HOMEBREW_NO_AUTO_UPDATE=1 brew install"
 
