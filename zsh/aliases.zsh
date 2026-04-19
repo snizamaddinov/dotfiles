@@ -43,6 +43,9 @@ alias 2='cd -2'
 alias 3='cd -3'
 alias 4='cd -4'
 
+alias md='mkdir -p'
+alias rd=rmdir
+
 # brew no update session
 alias brewinstall="HOMEBREW_NO_AUTO_UPDATE=1 brew install"
 

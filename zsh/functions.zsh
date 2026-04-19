@@ -10,14 +10,6 @@ checkout() {
     fi
 }
 
-unset -f mkd 2>/dev/null
-unalias mkd 2>/dev/null
-
-# Create a new directory and enter it
-function mkd() {
-   mkdir -p "$@" && cd "$@"
-}
-
 # Enter container by name pattern
 dex() {
   local pattern="$1"
