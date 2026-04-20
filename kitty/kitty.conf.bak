@@ -8,9 +8,12 @@ copy_on_select yes
 mouse_hide_wait     -3.0
 cursor_shape          beam
 cursor_blink_interval 0
-cursor_trail        300
-cursor_trail_decay 0.1 0.4
-cursor_trail_start_threshold 2
+#cursor_trail        300
+#cursor_trail_decay 0.1 0.4
+#cursor_trail_start_threshold 2
+#
+inactive_text_alpha 0.5
+window_border_width 0.5pt
 
 font_size 13.0
 adjust_line_height 110%
@@ -62,7 +65,6 @@ map page_down scroll_page_down
 
 shell /bin/zsh
 
-include ~/.config/kitty/current_theme.conf
 
 # allow other programs to control kitty
 allow_remote_control yes
@@ -76,3 +78,9 @@ bold_font        auto
 italic_font      auto
 bold_italic_font auto
 # END_KITTY_FONTS
+
+
+# BEGIN_KITTY_THEME
+# duckbones
+include current-theme.conf
+# END_KITTY_THEME

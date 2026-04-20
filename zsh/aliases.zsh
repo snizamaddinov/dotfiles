@@ -20,8 +20,8 @@ alias build="docker compose build"
 alias buildo="docker compose -f docker-compose.yaml -f docker-compose.override.yaml down"
 alias adminer="cdlaradock && docker compose up adminer -d && 1 && clear"
 alias mysql="cdlaradock && docker compose up mysql -d && 1 && clear"
-alias phoenix="ai && cd ../phoenix-service && docker compose -f compose.phoenix.yaml -f compose.override.yaml up -d && 2"
-alias masterai="ai && docker compose -f compose.master.yaml -f compose.override.yaml up"
+alias phoenix="cdai && cd ../phoenix-service && docker compose -f compose.phoenix.yaml -f compose.override.yaml up -d && 2"
+alias masterai="cdai && docker compose -f compose.master.yaml -f compose.override.yaml up"
 
 # CD shortcuts
 alias cdai="cd ~/PycharmProjects/metodbox-ai-backend/"
