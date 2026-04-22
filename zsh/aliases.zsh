@@ -2,13 +2,20 @@
 alias vim='nvim'
 
 # Git
+alias gs="git status -u"
 alias ga="git add"
 alias gaa="git add ."
+
 alias gc="git commit -m"
+
+alias gl="git pull"
+
 alias gp="git push"
-alias gs="git status -u"
+alias gpu="git push --set-upstream origin $(git_current_branch)"
+
 alias glog="git log --abbrev-commit --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 alias branches_desc="git for-each-ref --sort=committerdate refs/heads/ --format=\"%(committerdate:iso8601) %(refname:short)\""
+
 
 # Docker
 alias upo="docker compose -f docker-compose.yaml -f docker-compose.override.yaml up"

@@ -11,4 +11,5 @@
 #
 
 eval "$(zoxide init zsh --cmd cd)"
+eval "$(mcfly init zsh)"
 
