@@ -2,7 +2,7 @@
 autoload -U select-word-style
 select-word-style bash
 
-bindkey -v # vim mode in zsh
+#bindkey -v # vim mode in zsh
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 bindkey '^[^?' backward-kill-word
