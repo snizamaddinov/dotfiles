@@ -34,10 +34,12 @@ dex() {
   fi
 }
 
+lst() {
+  lsd --tree --depth "${1:-1}"
+}
 
-list() {
-    local level=${1:-1}
-    tree -L "$level" -a -C
+lat() {
+  lsd -A --tree --depth "${1:-1}"
 }
 
 function git_current_branch(){

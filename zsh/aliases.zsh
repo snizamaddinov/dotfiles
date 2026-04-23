@@ -36,9 +36,9 @@ alias cdvar='cd ~/Downloads/var-www'
 alias cdlaradock='cd ~/Downloads/var-www/laradock'
 
 # ls
-alias ls="lsd -G"
-alias ll="lsd -Glh"
-alias la="lsd -GlhA"
+alias ls="lsd"
+alias ll="lsd -lh"
+alias la="lsd -lha"
 
 # cd
 alias -g ..='cd ..'

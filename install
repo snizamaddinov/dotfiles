@@ -33,3 +33,7 @@ ln -s $DOTFILES/starship/starship.toml $HOME/.config/starship.toml
  rm -rf $HOME/.config/kitty
  ln -s $DOTFILES/kitty $HOME/.config/kitty
 
+# kitty
+ rm -rf $HOME/.config/lsd
+ ln -s $DOTFILES/lsd $HOME/.config/lsd
+

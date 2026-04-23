@@ -1,0 +1,13 @@
+blocks:
+  - permission
+  - user
+  - size
+  - name
+color:
+  when: auto
+  theme: default
+icons:
+  when: always
+  theme: fancy
+size: default
+indicators: true
