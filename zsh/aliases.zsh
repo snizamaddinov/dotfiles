@@ -9,6 +9,7 @@ alias gaa="git add ."
 alias gc="git commit -m"
 
 alias gl="git pull"
+alias gf="git fetch"
 
 alias gp="git push"
 alias gpu="git push --set-upstream origin $(git_current_branch)"

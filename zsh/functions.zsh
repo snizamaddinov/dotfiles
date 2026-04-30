@@ -53,3 +53,18 @@ function git_current_branch(){
   echo ${ref#refs/heads/}
 }
 
+gpt() {
+  local latest_tag=$(git describe --tags --abbrev=0 2>/dev/null)
+
+  if [ -z "$latest_tag" ]; then
+    echo "No local tags found."
+    return 1
+  fi
+
+  if git ls-remote --tags origin | grep -q "refs/tags/$latest_tag"; then
+    echo "Tag '$latest_tag' is already on origin."
+  else
+    git push origin tag "$latest_tag"
+  fi
+}
+
