@@ -68,3 +68,39 @@ gpt() {
   fi
 }
 
+gdlb() {
+    branches=$(git branch --merged develop | grep -vE '^\*|^[[:space:]]*(develop|master)$' | sed 's/^[[:space:]]*//')
+
+    if [ -z "$branches" ]; then
+        echo "No local branches merged into develop found."
+        return 0
+    fi
+
+    if [ "$1" = "-f" ]; then
+        echo "$branches" | xargs git branch -d
+    else
+        echo "Local branches merged into develop that would be deleted:"
+        echo "$branches"
+        echo
+        echo "Run with -f to delete them."
+    fi
+}
+
+gdrb() {
+    branches=$(git branch -r --merged origin/develop | grep -vE 'origin/(HEAD|develop|master)$' | sed 's|^[[:space:]]*origin/||')
+
+    if [ -z "$branches" ]; then
+        echo "No remote branches merged into origin/develop found."
+        return 0
+    fi
+
+    if [ "$1" = "-f" ]; then
+        echo "$branches" | xargs -I {} git push origin --delete {}
+    else
+        echo "Remote branches merged into origin/develop that would be deleted:"
+        echo "$branches"
+        echo
+        echo "Run with -f to delete them."
+    fi
+}
+
