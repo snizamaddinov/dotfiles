@@ -104,3 +104,19 @@ gdrb() {
     fi
 }
 
+restic-browser() {
+  set -a
+  source "$HOME/.config/vaultwarden-restic/r2.env"
+  set +a
+
+  open -a "Restic-Browser"
+}
+
+restic-browser-s3() {
+  set -a
+  source "$HOME/.config/vaultwarden-restic/s3.env"
+  set +a
+
+  open -a "Restic-Browser"
+}
+

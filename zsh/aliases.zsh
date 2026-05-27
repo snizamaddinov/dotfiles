@@ -57,3 +57,7 @@ alias rd=rmdir
 # brew no update session
 alias brewinstall="HOMEBREW_NO_AUTO_UPDATE=1 brew install"
 
+# shortcuts
+alias ip="curl https://icanhazip.com"
+
+

@@ -18,7 +18,7 @@ window_border_width 0.5pt
 font_size 14.0
 adjust_line_height 110%
 
-enable_audio_bell yes
+enable_audio_bell no
 macos_option_as_alt yes
 hide_window_decorations no
 #macos_titlebar_color background
@@ -73,7 +73,7 @@ listen_on unix:/tmp/mykitty
 
 
 # BEGIN_KITTY_FONTS
-font_family      family="TX-02"
+font_family      family="IosevkaTerm Nerd Font Mono"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
