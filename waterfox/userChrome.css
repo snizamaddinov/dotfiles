@@ -1,0 +1,26 @@
+#identity-box,
+#tracking-protection-icon-container,
+#reader-mode-button,
+#star-button-box,
+#pageAction-urlbar-_testpilot-containers,
+#pageActionButton,
+.urlbar-page-action,
+.urlbar-icon,
+#urlbar-icons {
+  display: none !important;
+}
+
+.tabbrowser-tab {
+  padding-block: 0 !important;
+  margin-block: 0 !important;
+}
+
+.tab-background {
+  margin-block: 2px !important;
+}
+
+.tab-content {
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+}
+
