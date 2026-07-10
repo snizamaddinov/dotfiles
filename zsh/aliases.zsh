@@ -35,6 +35,7 @@ alias masterai="cdai && docker compose -f compose.master.yaml -f compose.overrid
 alias cdai="cd ~/PycharmProjects/metodbox-ai-backend/"
 alias cdvar='cd ~/Downloads/var-www'
 alias cdlaradock='cd ~/Downloads/var-www/laradock'
+alias cdr='cd $(git rev-parse --show-toplevel)' # cd to git Root
 
 # ls
 alias ls="lsd"

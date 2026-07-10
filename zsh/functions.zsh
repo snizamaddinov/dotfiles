@@ -120,3 +120,12 @@ restic-browser-s3() {
   open -a "Restic-Browser"
 }
 
+optimize_mov() {
+    if [[ -z "$1" || -z "$2" ]]; then
+        echo "Usage: optimize_mov input.mov output.mp4"
+        return 1
+    fi
+
+    ffmpeg -i "$1" -vcodec libx264 -crf 23 -acodec aac "$2"
+}
+
