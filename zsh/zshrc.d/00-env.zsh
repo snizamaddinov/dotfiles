@@ -8,7 +8,7 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 export HOMEBREW_NO_AUTO_UPDATE=1
 export HOMEBREW_NO_ENV_HINTS=1
-
+export BAU_MCP_TOKEN='9348a6db17590f0dc361b90c225cef92567daa36f443f23b'
 export ZSH_DISABLE_COMPFIX=true
 export DISABLE_UPDATE_PROMPT=YES
 

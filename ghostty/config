@@ -1,31 +1,51 @@
-copy-on-select = clipboard
+# Typography and Cursor
+font-family = "TX02 Nerd Font Mono"
+font-size = 14
+#font-line-height = 1.1
+cursor-style = bar
+#cursor-blink = false
+cursor-opacity = 1
+adjust-cell-height = 20%
+adjust-strikethrough-position = 50%
+cursor-color = #FFFF00
+
+# Window and Appearance
 theme = rebecca
-font-family = "Google Sans Code 
-font-style = Medium
-keybind = ctrl+z=close_surface
-keybind = cmd+r=new_split:right
 window-padding-x = 20
-window-padding-y = 40
-maximize=true
-fullscreen=true
-window-decoration=true
+window-padding-y = 20
+#macos-titlebar-style = hidden
+macos-titlebar-proxy-icon = hidden
+title = ""
+fullscreen = true
+window-subtitle = false
+unfocused-split-opacity = 0.6
+window-save-state = never
+
+# Terminal Behavior
+# command = /bin/zsh
+scrollback-limit = 10000
+copy-on-select = clipboard
+mouse-hide-while-typing = true
+macos-option-as-alt = true
+confirm-close-surface = false
 working-directory=/Users/bkmobil/Projects
 
-adjust-strikethrough-position = 50%
-adjust-cell-height = 20%
+# Keybinds - Split Creation and Navigation
+keybind = cmd+r=new_split:right
+keybind = cmd+enter=new_split:right
+keybind = cmd+u=new_split:down
+keybind = cmd+h=goto_split:left
+keybind = cmd+j=goto_split:down
+keybind = cmd+k=goto_split:up
+keybind = cmd+l=goto_split:right
+keybind = cmd+n=goto_split:next
+keybind = cmd+p=goto_split:previous
+keybind = ctrl+z=close_surface
 
-macos-titlebar-style = hidden
-
-cursor-opacity = 1
-cursor-color = #FFFF00
-cursor-style = bar
-cursor-style-blink = false
-
-mouse-hide-while-typing = true
-
-macos-titlebar-style = hidden
-macos-titlebar-proxy-icon = hidden
-macos-option-as-alt = true
-
+# Keybinds - General Actions and Shortcuts
+keybind = cmd+shift+r=reload_config
+keybind = page_up=scroll_page_up
+keybind = page_down=scroll_page_down
 keybind = alt+backspace=text:\x1b\x7f
+keybind = cmd+backspace=text:\x15
 
