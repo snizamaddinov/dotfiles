@@ -10,7 +10,7 @@ adjust-strikethrough-position = 50%
 cursor-color = #FFFF00
 
 # Window and Appearance
-theme = rebecca
+theme = Dark Pastel 
 window-padding-x = 20
 window-padding-y = 20
 #macos-titlebar-style = hidden
@@ -18,8 +18,12 @@ macos-titlebar-proxy-icon = hidden
 title = ""
 fullscreen = true
 window-subtitle = false
-unfocused-split-opacity = 0.6
 window-save-state = never
+
+unfocused-split-opacity = 0.8
+split-divider-color = #3f3f3f
+unfocused-split-fill = #1e1e1e
+#background-opacity = 0.9
 
 # Terminal Behavior
 # command = /bin/zsh

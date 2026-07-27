@@ -1,6 +1,7 @@
 #/bin/bash
 DOTFILES="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+
 # Dotfiles link
 rm -rf $HOME/dotfiles
 ln -s $DOTFILES $HOME/dotfiles
